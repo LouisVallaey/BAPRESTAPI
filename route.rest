@@ -1,0 +1,27 @@
+GET http://localhost:3000/customers
+
+###
+
+POST http://localhost:3000/customers
+Content-Type: application/json
+
+{
+    "firstName": "Louis",
+    "lastName": "Vallaey",
+    "email": "l.vallaey@gmail.com"
+}
+
+###
+GET http://localhost:3000/customers/5fd34da731d10775c809d7bd
+
+###
+DELETE http://localhost:3000/customers/5fd34da731d10775c809d7bd
+
+###
+
+PATCH http://localhost:3000/customers/5fd34fc4a7c69f772d91d8df
+Content-Type: application/json
+
+{
+    "firstName": "Ludwig"
+}
